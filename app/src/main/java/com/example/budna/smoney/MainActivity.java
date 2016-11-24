@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new Mnenje();
                 break;
             case 5:
-                fragment = new Dela();
+                fragment = new IzbiraRegije();
                 break;
             case 6:
                 fragment = new Popusti();

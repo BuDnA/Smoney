@@ -34,10 +34,10 @@ public class Dela extends android.app.Fragment {
     public ProgressBar juhej;
 
 
-    private static final String URL  = "https://www.studentski-servis.com/Studenti/Delo/Prosta-dela";
+    private String URL;
 
-    public Dela() {
-
+    public Dela(String inputUrl) {
+        URL = inputUrl;
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class Dela extends android.app.Fragment {
 
         protected Void doInBackground(Void... voids) {
                 try {
-                    Document doc = Jsoup.connect("https://www.studentski-servis.com/index.php?t=prostaDela&page=1&perPage=100&sort=1&workType=1&keyword=").get();
+                    Document doc = Jsoup.connect(URL).get();
                     Element body = doc.body();
                     Document juhej = Jsoup.parse(body.toString());
                     ArrayList<Delo> delo = new ArrayList<Delo>();
