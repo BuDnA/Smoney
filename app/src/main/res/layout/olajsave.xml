@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Na tej strani lahko preberete glavne zakone za izračun dohodnine za študente"
+            android:id="@+id/textView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11dp"
+            android:text="\n Splošna olajšava \n Splošna olajšava za leto 2015 znaša 3.302,70 €. Prizna se vsakemu zavezancu pod pogojem, da drug rezident zanj ne uveljavlja posebne olajšave za vzdrževanega družinskega člana.\n To pomeni, da splošno olajšavo izgubiš, če te starši v svoji napovedi uveljavljajo kot vzdrževanega družinskega člana."
+            android:id="@+id/textView15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11dp"
+            android:text="\n Dodatna olajšava \n Študentu se prizna tudi dodatna splošna olajšava: za leto 2015 znaša 3.217,12 € za obdavčljive prihodke do višine 12570,89 €."
+            android:id="@+id/textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11dp"
+            android:text="To pomeni, da lahko študent uveljavlja dodatno splošno olajšavo pod pogojem:  če starši za študenta ne uveljavlja splošne olajšave za vzdrževanega družinskega člana"
+            android:id="@+id/textView17" />
+    </LinearLayout>
+</RelativeLayout>

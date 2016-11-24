@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Smoney</string>
+    <string name="action_settings">Settings</string>
+    <string name="Vrsta_dela">Vrsta dela</string>
+    <string-array name="Vrsta_dela">
+
+        <item>Administrativna dela</item>
+        <item>Animator</item>
+        <item>Asistent</item>
+        <item>Blagajnik</item>
+        <item>Čiščenje</item>
+        <item>Degustacije</item>
+        <item>Deljenje letakov</item>
+        <item>Delo na terenu</item>
+        <item>Helpdelk</item>
+        <item>Inštrukcije</item>
+        <item>Klicni center</item>
+        <item>Mentor</item>
+        <item>Montaža</item>
+        <item>Programiranje</item>
+        <item>Promocija</item>
+        <item>Telefonist</item>
+        <item>Voznik</item>
+        <item>Drugo</item>
+
+        <item>Telefonist</item>
+        <item>Voznik</item>
+    </string-array>
+
+    <string name="izberi_podjetje">Izberi podjetje</string>
+    <string-array name="imena_podjetij">
+
+        <item>Borut</item>
+        <item>Tot</item>
+        <item>Husakovic</item>
+        <item>Nedim</item>
+    </string-array>
+
+    <string name="izberi_zadevo">Izberi podjetje</string>
+    <string-array name="Zadeve">
+
+        <item>1. Kritika</item>
+        <item>2. Mnenje</item>
+        <item>3. Pohvala</item>
+    </string-array>
+    <string name="izberi_jezik">Izberite jezik</string>
+    <string-array name="Jezik">
+
+        <item>Slovenščina</item>
+        <item>English</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_opened">Opened</string>
+    <string name="drawer_closed">Closed</string>
+</resources>

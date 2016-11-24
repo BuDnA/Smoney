@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D7F98</color>//prva
+    <color name="colorPrimaryDark">#9BB6CA</color>//druga
+    <color name="colorAccent">#5D7F98</color>
+</resources>
