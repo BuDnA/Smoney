@@ -85,13 +85,22 @@ public class Ure extends android.app.Fragment {
         editTextUre=(EditText)rootView.findViewById(R.id.ETure);
         konc=(TextView)rootView.findViewById(R.id.TVrezultat);
         final EditText txtDate=(EditText)rootView.findViewById(R.id.txtdate);
+
         buttonAdd.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                String izbranoIme;
                 String ure = editTextUre.getText().toString();
-                String izbranoIme = spinerIme.getSelectedItem().toString();
+                if(spinerIme.getSelectedItem() != null) {
+                    izbranoIme = spinerIme.getSelectedItem().toString();
+                } else {
+                    Toast.makeText(getActivity(), "Za dodajanje ur, morate najprej dodati podjetje", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 datum=txtDate.getText().toString();
+
                 if (ure.matches("")) {
                     Toast.makeText(getActivity(), "Niste vnesli števila ur", Toast.LENGTH_SHORT).show();
                     return;
@@ -113,7 +122,19 @@ public class Ure extends android.app.Fragment {
         });
 
 
+        txtDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DateDialog dialog = new DateDialog(view);
 
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+
+                dialog.show(ft, "DatePicker");
+                datum=dialog.date;
+            }
+        });
+
+        /*
 
         txtDate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             public void onFocusChange(View view, boolean hasfocus) {
@@ -132,6 +153,7 @@ public class Ure extends android.app.Fragment {
 
 
         });
+        */
 
         return rootView;
     }
